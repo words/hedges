@@ -1,0 +1,53 @@
+{
+  "name": "hedges",
+  "version": "0.0.1",
+  "description": "List of (possible) English hedge words",
+  "license": "MIT",
+  "keywords": [
+    "hedge",
+    "word",
+    "list"
+  ],
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "devDependencies": {
+    "eslint": "^0.7.4",
+    "istanbul": "^0.3.0",
+    "jscs": "^1.5.3",
+    "mocha": "^1.20.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/hedges.git"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/_mocha --reporter spec --check-leaks -u exports spec/hedges.spec.js",
+    "test-travis": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --check-leaks -u exports spec/hedges.spec.js",
+    "lint": "npm run lint-api && npm run lint-test && npm run lint-style",
+    "lint-api": "node_modules/.bin/eslint index.js build-data.js build-supported-hedges.js --env node --env browser --rule 'quotes: [2, single]'",
+    "lint-test": "node_modules/.bin/eslint spec/hedges.spec.js --env node --env mocha --rule 'quotes: [2, single]'",
+    "lint-style": "node_modules/.bin/jscs index.js build-data.js build-supported-hedges.js spec/hedges.spec.js --reporter=inline",
+    "install-browser-test": "npm install browserify",
+    "build-data": "node build-data.js",
+    "build-supported-hedges": "node build-supported-hedges.js",
+    "build-browser-test": "node_modules/.bin/browserify spec/hedges.spec.js -o spec/browser.spec.js",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- spec/hedges.spec.js",
+    "prepublish": "npm run build-data && npm run build-supported-hedges",
+    "make": "npm run lint && npm run coverage"
+  },
+  "testling": {
+    "files": "spec/hedges.spec.js",
+    "harness": "mocha",
+    "browsers": [
+      "iexplore/latest",
+      "chrome/latest",
+      "chrome/canary",
+      "firefox/latest",
+      "firefox/nightly",
+      "opera/latest",
+      "opera/next",
+      "safari/latest",
+      "iphone/latest",
+      "android-browser/latest"
+    ]
+  }
+}

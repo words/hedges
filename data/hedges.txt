@@ -1,0 +1,195 @@
+% How to change this file:
+% - Every entry on a single line;
+% - Line-comments with a percentage-sign;
+% - Empty lines are ignored;
+% - Make sure both British and American (Australian, Canadian) English
+%   are covered.
+
+% Sources:
+% - https://github.com/ohEmily/HedgeCounter/
+% - http://english-language-skills.com/item/
+%     177-writing-skills-hedge-words.html
+% - http://www.uefap.com/writing/feature/hedge.htm
+% - http://www.davidhanauer.com/CV/conference_papers/2012/
+%     hedging_AMIA_2012_presentation.pdf
+% - https://www.readwriteandedit.com/hedgewords.html
+% - http://deceptionanalysis.com/hedge_words.html
+
+% HedgeCounter
+
+largely
+generally
+often
+rarely
+sometimes
+frequently
+occasionally
+seldom
+usually
+most
+several
+some
+almost
+practically
+apparently
+virtually
+basically
+approximately
+roughly
+somewhat
+somehow
+partially
+actually
+like
+something
+someone
+somebody
+somewhere
+think
+thinks
+thought
+believe
+believed
+believes
+consider
+considers
+considered
+assume
+assumes
+assumed
+understand
+understands
+understood
+find
+found
+finds
+appear
+appears
+appeared
+seem
+seems
+seemed
+suppose
+supposes
+supposed
+guess
+guesses
+guessed
+estimate
+estimates
+estimated
+speculate
+speculates
+speculated
+suggest
+suggests
+suggested
+may
+could
+should
+might
+surely
+probably
+likely
+maybe
+perhaps
+unsure
+probable
+unlikely
+possibly
+possible
+read
+say
+says
+looks like
+look like
+don't know
+necessarily
+kind of
+much
+bunch
+couple
+few
+little
+really
+and all that
+and so forth
+et cetera
+in my mind
+in my opinion
+their impression
+my impression
+in my understanding
+my thinking is
+my understanding is
+in my view
+if i'm understanding you correctly
+something or other
+so far
+at least
+
+% english-language-skills
+
+about
+around
+can
+effectively
+evidently
+fairly
+hopefully
+in general
+mainly
+more or less
+mostly
+overall
+presumably
+
+% Such as, pretty strong, pretty weak
+pretty
+quite clearly
+quite
+rather
+sort of
+supposedly
+
+
+% uefap
+
+tend
+appear to be
+doubt
+be sure
+indicate
+will
+must
+would
+certainly
+definitely
+clearly
+conceivably
+certain
+definite
+clear
+assumption
+possibility
+probability
+
+% Others:
+
+many
+almost never
+improbable
+always
+% never
+rare
+consistent with
+% not
+doubtful
+suggestive
+diagnostic
+inconclusive
+apparent
+alleged
+allege
+a bit
+presumable
