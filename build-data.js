@@ -1,38 +1,13 @@
 'use strict';
 
-var fs, lines;
+var fs, textToJSON, data;
 
 fs = require('fs');
-lines = fs.readFileSync('data/hedges.txt', 'utf8')
-    .split('\n')
-    .sort()
-    .filter(function (word) {
-        if (!word) {
-            return false;
-        }
+textToJSON = require('plain-text-data-to-json');
 
-        if (word.indexOf('%') === 0) {
-            return false;
-        }
+data = textToJSON(fs.readFileSync('data/hedges.txt', 'utf8'));
 
-        return true;
-    });
-
-lines.forEach(function (word, index) {
-    if (lines.indexOf(word, index + 1) !== -1) {
-        throw new Error(
-            'Duplicate entry `' + word + '`. ' +
-            'Please remove one.'
-        );
-    }
-
-    if (word.trim() !== word) {
-        throw new Error(
-            'Padded entry `' + word + '`. ' +
-            'Please remove surrounding white space.'
-        );
-    }
-
+data.forEach(function (word) {
     if (word.toLowerCase() !== word) {
         throw new Error(
             'Mixed-case entry `' + word + '`. ' +
@@ -41,4 +16,4 @@ lines.forEach(function (word, index) {
     }
 });
 
-fs.writeFileSync('data/hedges.json', JSON.stringify(lines));
+fs.writeFileSync('data/hedges.json', JSON.stringify(data));
