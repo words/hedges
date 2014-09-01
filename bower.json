@@ -15,6 +15,9 @@
   "authors": [
     "Titus Wormer <tituswormer@gmail.com>"
   ],
+  "dependencies": {
+    "datalist-interface": "~0.0.1"
+  },
   "ignore": [
     ".*",
     "*.log",

@@ -9,10 +9,13 @@
     "list"
   ],
   "repository": "wooorm/hedges",
-  "scripts" : [
+  "scripts": [
     "index.js"
   ],
-  "json" : [
+  "json": [
     "data/hedges.json"
-  ]
+  ],
+  "dependencies": {
+    "wooorm/datalist-interface": "~0.0.1"
+  }
 }

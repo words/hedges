@@ -16,6 +16,9 @@
     "mocha": "^1.20.4",
     "plain-text-data-to-json": "^0.0.1"
   },
+  "dependencies": {
+    "datalist-interface": "^0.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wooorm/hedges.git"
