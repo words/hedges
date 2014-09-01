@@ -10,7 +10,6 @@ deploy:
   provider: npm
   email: tituswormer@gmail.com
   api_key:
-    secure: kVRUR6vE8yHb3zDblXnup0k6t8p7max0aK++DYBZCSpnIF+rIzqTjg4FdDv8Hv0Hdi/52PiYrBSBw8VdCRGhQlwmVXzNOllAy7+ucZya9zlpmpvken7bjQDifgbKqkxplMyNaUgLggDTEVyfIcPbBAagiV/hrp+M6/viLw++GN0=
+    secure: FD133yHar5vQBDxqB9RZIsseEbl7+1AFCi7PdaSy/CvNwt4yStQlEm/WgK8gFwtPBlL0QMYPDJzeDE5w8bIc5m/3pvP4lDaWLTnxqemlH353rD6tmRkn/egjdg3/jj63hN9sZeo8ZRQHvrFWUKypCV356bVtf/DAZbALavy3w28=
   on:
-    tags: true
     repo: wooorm/hedges
