@@ -59,6 +59,7 @@ Note that the words listed in **hedges** are _speculated_ to be hedges, although
 
 ## Related
 
+- [buzzwords](https://github.com/wooorm/buzzwords) — List of buzzwords;
 - [fillers](https://github.com/wooorm/fillers) — List of filler words;
 - [weasels](https://github.com/wooorm/weasels) — List of weasel words.
 
