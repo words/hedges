@@ -61,6 +61,7 @@ Note that the words listed in **hedges** are _speculated_ to be hedges, although
 
 - [buzzwords](https://github.com/wooorm/buzzwords) — List of buzzwords;
 - [fillers](https://github.com/wooorm/fillers) — List of filler words;
+- [profanities](https://github.com/wooorm/profanities) — List of profane words;
 - [weasels](https://github.com/wooorm/weasels) — List of weasel words.
 
 ## License
