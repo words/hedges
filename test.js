@@ -1,9 +1,18 @@
 'use strict';
 
-var hedges, assert;
+/**
+ * Dependencies.
+ */
+
+var hedges,
+    assert;
 
 hedges = require('./');
 assert = require('assert');
+
+/**
+ * Tests.
+ */
 
 describe('hedges', function () {
     it('should be an `Object`', function () {
@@ -22,7 +31,9 @@ describe('hedges.is(word)', function () {
 });
 
 describe('hedges.all()', function () {
-    var all = hedges.all();
+    var all;
+
+    all = hedges.all();
 
     it('should return an array', function () {
         assert('length' in all);
@@ -30,21 +41,15 @@ describe('hedges.all()', function () {
     });
 
     it('every entry should be lowercase', function () {
-        var iterator = -1,
-            length = all.length;
-
-        while (++iterator < length) {
-            assert(all[iterator].toLowerCase() === all[iterator]);
-        }
+        all.forEach(function (word) {
+            assert(word.toLowerCase() === word);
+        });
     });
 
     it('every entry should only occur once', function () {
-        var iterator = -1,
-            length = all.length;
-
-        while (++iterator < length) {
-            assert(all.indexOf(all[iterator], iterator + 1) === -1);
-        }
+        all.forEach(function (word, index) {
+            assert(all.indexOf(word, index + 1) === -1);
+        });
     });
 
     it('should be immutable', function () {
@@ -59,9 +64,11 @@ describe('hedges.add(hedge) and hedges.remove(hedge)', function () {
         assert(hedges.is('unicorn') === false);
 
         hedges.add('unicorn');
+
         assert(hedges.is('unicorn') === true);
 
         hedges.remove('unicorn');
+
         assert(hedges.is('unicorn') === false);
     });
 
@@ -70,10 +77,12 @@ describe('hedges.add(hedge) and hedges.remove(hedge)', function () {
         assert(hedges.is('rainbow') === false);
 
         hedges.add('unicorn', 'rainbow');
+
         assert(hedges.is('unicorn') === true);
         assert(hedges.is('rainbow') === true);
 
         hedges.remove('unicorn', 'rainbow');
+
         assert(hedges.is('unicorn') === false);
         assert(hedges.is('rainbow') === false);
     });
@@ -81,7 +90,9 @@ describe('hedges.add(hedge) and hedges.remove(hedge)', function () {
     it('should fail silently when removing a non-existing hedge',
         function () {
             assert(hedges.is('unicorn') === false);
+
             hedges.remove('unicorn');
+
             assert(hedges.is('unicorn') === false);
         }
     );
