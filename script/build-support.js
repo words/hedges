@@ -3,8 +3,8 @@
 var fs = require('fs'),
     words = require('../data/hedges.json');
 
-fs.writeFileSync('Supported-hedge-words.md',
-    'Supported hedge-words\n' +
+fs.writeFileSync('Supported-words.md',
+    'Supported words\n' +
     '=================\n' +
     '\n' +
 

@@ -1,4 +1,4 @@
-Supported hedge-words
+Supported words
 =================
 
 * “a bit”;
