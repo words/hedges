@@ -8,14 +8,14 @@
     "word",
     "list"
   ],
+  "dependencies": {
+    "wooorm/datalist-interface": "^0.1.0"
+  },
   "repository": "wooorm/hedges",
   "scripts": [
     "index.js"
   ],
   "json": [
     "data/hedges.json"
-  ],
-  "dependencies": {
-    "wooorm/datalist-interface": "^0.1.0"
-  }
+  ]
 }
