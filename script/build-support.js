@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs'),
-    words = require('./data/hedges.json');
+    words = require('../data/hedges.json');
 
 fs.writeFileSync('Supported-hedge-words.md',
     'Supported hedge-words\n' +
