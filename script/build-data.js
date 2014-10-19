@@ -16,4 +16,4 @@ data.forEach(function (word) {
     }
 });
 
-fs.writeFileSync('data/hedges.json', JSON.stringify(data));
+fs.writeFileSync('data/hedges.json', JSON.stringify(data, null, 2));
