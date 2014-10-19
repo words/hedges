@@ -2,7 +2,7 @@
 
 var hedges, assert;
 
-hedges = require('..');
+hedges = require('./');
 assert = require('assert');
 
 describe('hedges', function () {
