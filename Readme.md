@@ -1,4 +1,4 @@
-# hedges [![Build Status](https://travis-ci.org/wooorm/hedges.svg?branch=master)](https://travis-ci.org/wooorm/hedges) [![Coverage Status](https://img.shields.io/coveralls/wooorm/hedges.svg)](https://coveralls.io/r/wooorm/hedges?branch=master)
+# hedges [![Build Status](https://img.shields.io/travis/wooorm/hedges.svg?style=flat)](https://travis-ci.org/wooorm/hedges) [![Coverage Status](https://img.shields.io/coveralls/wooorm/hedges.svg?style=flat)](https://coveralls.io/r/wooorm/hedges?branch=master)
 
 List of _supposed_ English (both British and American) hedge words.
 
