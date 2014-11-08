@@ -1,14 +1,25 @@
 'use strict';
 
-var fs = require('fs'),
-    words = require('../data/hedges.json');
+/**
+ * Dependencies.
+ */
+
+var fs,
+    hedges;
+
+fs = require('fs');
+hedges = require('..');
+
+/**
+ * Write.
+ */
 
 fs.writeFileSync('Supported-words.md',
     'Supported words\n' +
     '=================\n' +
     '\n' +
 
-    words.map(function (word) {
+    hedges.all().map(function (word) {
         return '* “' + word + '”';
     }).join(';\n') +
 
