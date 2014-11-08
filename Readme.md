@@ -31,25 +31,7 @@ hedges.is('unicorn'); // false
 
 ## API
 
-_Roughly_, **hedges** exports the following functions:
-
-### hedges.is(word)
-
-Returns whether (true) or not (false) a given word _might_ be a hedge word.
-
-### hedges.add(word...)
-
-_Effectively_ adds all arguments to the internal database.
-Given values are **NOT** validated.
-
-### hedges.remove(word...)
-
-Removes all arguments from the internal database, _effectively_.
-Given values are **NOT** validated.
-
-### hedges.all()
-
-_Surely_, return the values (as an Array) in the internal database.
+_Roughly_, **hedges** exposes information using [the datalist-interface API](https://github.com/wooorm/datalist-interface#api).
 
 ## Supported words
 
