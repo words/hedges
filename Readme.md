@@ -48,4 +48,4 @@ Note that the words listed in **hedges** are _speculated_ to be hedges, although
 
 ## License
 
-MIT © Titus Wormer
+MIT © [Titus Wormer](http://wooorm.com)
