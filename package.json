@@ -31,7 +31,7 @@
     "lint-api": "eslint index.js",
     "lint-test": "eslint --env mocha test.js",
     "lint-script": "eslint script/build-data.js script/build-support.js",
-    "lint-style": "jscs index.js script/build-data.js script/build-support.js test.js --reporter=inline",
+    "lint-style": "jscs --reporter inline index.js script/build-data.js script/build-support.js test.js",
     "lint": "npm run lint-api && npm run lint-test && npm run lint-script && npm run lint-style",
     "make": "npm run lint && npm run coverage",
     "build-data": "node script/build-data.js",
