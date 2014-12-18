@@ -35,7 +35,7 @@ _Roughly_, **hedges** exposes information using [the datalist-interface API](htt
 
 ## Supported words
 
-For a complete list of supported hedge words and phrases, _like_, see [Supported-words.md](Supported-words.md).
+For a complete list of supported hedge words and phrases, _like_, see [Support.md](Support.md).
 
 Note that the words listed in **hedges** are _speculated_ to be hedges, although _perhaps_ not.
 
