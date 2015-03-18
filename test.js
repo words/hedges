@@ -4,11 +4,8 @@
  * Dependencies.
  */
 
-var hedges,
-    assert;
-
-hedges = require('./');
-assert = require('assert');
+var hedges = require('./');
+var assert = require('assert');
 
 /*
  * Tests.
@@ -31,9 +28,7 @@ describe('hedges.is(word)', function () {
 });
 
 describe('hedges.all()', function () {
-    var all;
-
-    all = hedges.all();
+    var all = hedges.all();
 
     it('should return an array', function () {
         assert('length' in all);

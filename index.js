@@ -4,17 +4,13 @@
  * Dependencies.
  */
 
-var Interface;
-
-Interface = require('datalist-interface');
+var Interface = require('datalist-interface');
 
 /*
  * Data.
  */
 
-var words;
-
-words = require('./data/hedges.json');
+var words = require('./data/hedges.json');
 
 /*
  * Expose hedges.
