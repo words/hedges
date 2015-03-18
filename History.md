@@ -1,3 +1,22 @@
+
+0.3.0 / 2015-03-18
+==================
+
+*   Refactor `History.md` ([68444f5](https://github.com/wooorm/hedges/commit/68444f5))
+*   Refactor code style ([dcec3e0](https://github.com/wooorm/hedges/commit/dcec3e0))
+*   Update `.travis.yml` ([6f5d315](https://github.com/wooorm/hedges/commit/6f5d315))
+*   Update copyright notice in `LICENSE` to include 2015 ([2839e2b](https://github.com/wooorm/hedges/commit/2839e2b))
+*   Add link to whole license in `Readme.md` ([e84f4d5](https://github.com/wooorm/hedges/commit/e84f4d5))
+*   Add `hedges.js`, `hedges.min.js` ([e4e6499](https://github.com/wooorm/hedges/commit/e4e6499))
+*   Add esmangle as a dev-dependency ([450f7d8](https://github.com/wooorm/hedges/commit/450f7d8))
+*   Add browserify as a dev-dependency ([609663f](https://github.com/wooorm/hedges/commit/609663f))
+*   Add duo as an installation method in `Readme.md` ([533b457](https://github.com/wooorm/hedges/commit/533b457))
+*   Add links to installation methods in `Readme.md` ([13cea91](https://github.com/wooorm/hedges/commit/13cea91))
+*   Fix fenced code block language-flags in `Readme.md` ([95e1a51](https://github.com/wooorm/hedges/commit/95e1a51))
+*   Add `build.js` to `.gitignore`, `.npmignore`, `bower.json` ([14a32a4](https://github.com/wooorm/hedges/commit/14a32a4))
+*   Update jscs-jsdoc ([ce1f850](https://github.com/wooorm/hedges/commit/ce1f850))
+*   Update eslint ([bb3b331](https://github.com/wooorm/hedges/commit/bb3b331))
+
 0.2.2 / 2014-12-18
 ==================
 
