@@ -16,6 +16,12 @@ $ npm install hedges
 $ component install wooorm/hedges
 ```
 
+[Duo](http://duojs.org/#getting-started):
+
+```javascript
+var hedges = require('wooorm/hedges');
+```
+
 ## Usage
 
 ```javascript
