@@ -5,18 +5,20 @@ List of _supposed_ English (both British and American) hedge words.
 ## Installation
 
 npm:
-```sh
+
+```bash
 $ npm install hedges
 ```
 
 Component.js:
-```sh
+
+```bash
 $ component install wooorm/hedges
 ```
 
 ## Usage
 
-```js
+```javascript
 var hedges = require('hedges');
 
 hedges.is('approximately'); // true
