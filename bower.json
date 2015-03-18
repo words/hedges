@@ -1,6 +1,6 @@
 {
   "name": "hedges",
-  "main": "index.js",
+  "main": "hedges.js",
   "description": "List of (possible) English hedge words",
   "license": "MIT",
   "keywords": [
@@ -8,9 +8,6 @@
     "word",
     "list"
   ],
-  "dependencies": {
-    "datalist-interface": "^0.2.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wooorm/hedges.git"
@@ -31,6 +28,7 @@
     "component.json",
     "package.json",
     "build.js",
+    "index.js",
     "test.js"
   ]
 }

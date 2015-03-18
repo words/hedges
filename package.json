@@ -38,7 +38,9 @@
     "make": "npm run lint && npm run coverage",
     "build-data": "node script/build-data.js",
     "build-support": "node script/build-support.js",
-    "build": "npm run build-data && npm run build-support",
+    "build": "npm run build-data && npm run build-support && npm run bundle",
+    "bundle": "browserify index.js -s hedges > hedges.js",
+    "postbundle": "esmangle hedges.js > hedges.min.js",
     "prepublish": "npm run build"
   }
 }

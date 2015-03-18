@@ -16,10 +16,25 @@ $ npm install hedges
 $ component install wooorm/hedges
 ```
 
+[Bower](http://bower.io/#install-packages):
+
+```bash
+$ bower install hedges
+```
+
 [Duo](http://duojs.org/#getting-started):
 
 ```javascript
 var hedges = require('wooorm/hedges');
+```
+
+UMD: globals, AMD, and CommonJS ([uncompressed](hedges.js) and [compressed](hedges.min.js)):
+
+```html
+<script src="path/to/hedges.js"></script>
+<script>
+  console.log(hedges);
+</script>
 ```
 
 ## Usage
