@@ -4,13 +4,13 @@ List of _supposed_ English (both British and American) hedge words.
 
 ## Installation
 
-npm:
+[npm](https://docs.npmjs.com/cli/install):
 
 ```bash
 $ npm install hedges
 ```
 
-Component.js:
+[Component.js](https://github.com/componentjs/component):
 
 ```bash
 $ component install wooorm/hedges
