@@ -30,6 +30,7 @@
     "script/",
     "component.json",
     "package.json",
+    "build.js",
     "test.js"
   ]
 }
