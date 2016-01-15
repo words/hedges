@@ -1,38 +1,38 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2016 Titus Wormer
+ * @license MIT
+ * @module hedges:script:build-data
+ * @fileoverview Generate a database from source.
+ */
+
 'use strict';
+
+/* eslint-env node */
 
 /*
  * Dependencies.
  */
 
-var fs,
-    textToJSON;
-
-fs = require('fs');
-textToJSON = require('plain-text-data-to-json');
+var fs = require('fs');
+var path = require('path');
+var textToJSON = require('plain-text-data-to-json');
 
 /*
- * Data.
+ * Constants.
  */
 
-var data;
-
-data = textToJSON(fs.readFileSync('data/hedges.txt', 'utf8'));
+var INPUT = path.join('data', 'index.txt');
+var OUTPUT = path.join('data', 'index.json');
 
 /*
- * Validate.
+ * Read.
  */
 
-data.forEach(function (word) {
-    if (word.toLowerCase() !== word) {
-        throw new Error(
-            'Mixed-case entry `' + word + '`. ' +
-            'Please ensure all entries are lower case.'
-        );
-    }
-});
+var data = textToJSON(fs.readFileSync(INPUT, 'utf8'));
 
 /*
  * Write.
  */
 
-fs.writeFileSync('data/hedges.json', JSON.stringify(data, null, 2));
+fs.writeFileSync(OUTPUT, JSON.stringify(data, null, 2) + '\n');

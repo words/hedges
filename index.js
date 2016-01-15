@@ -1,19 +1,17 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2016 Titus Wormer
+ * @license MIT
+ * @module hedges
+ * @fileoverview List of (possible) English hedge words.
+ */
+
 'use strict';
 
-/*
- * Dependencies.
- */
-
-var Interface = require('datalist-interface');
+/* eslint-env commonjs */
 
 /*
- * Data.
+ * Expose.
  */
 
-var words = require('./data/hedges.json');
-
-/*
- * Expose hedges.
- */
-
-module.exports = new Interface(words);
+module.exports = require('./data/index.json');

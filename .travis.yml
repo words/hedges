@@ -1,16 +1,25 @@
 language: node_js
-script: npm run-script test-travis
 node_js:
 - '0.10'
 - '0.11'
 - '0.12'
+- '4.0'
+- '5.0'
 - iojs
-after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
 sudo: false
+after_script: npm install codecov.io && cat ./coverage/lcov.info | codecov
 deploy:
-  provider: npm
-  email: tituswormer@gmail.com
-  api_key:
-    secure: FD133yHar5vQBDxqB9RZIsseEbl7+1AFCi7PdaSy/CvNwt4yStQlEm/WgK8gFwtPBlL0QMYPDJzeDE5w8bIc5m/3pvP4lDaWLTnxqemlH353rD6tmRkn/egjdg3/jj63hN9sZeo8ZRQHvrFWUKypCV356bVtf/DAZbALavy3w28=
-  on:
-    repo: wooorm/hedges
+  - provider: npm
+    email: tituswormer@gmail.com
+    api_key:
+        secure: tji+1KawcfpAARquqpGLa7wa4cAiiRGoDJWeDCyrlZ84k9JVEyYni0505DWUdnlblBKM3qim1tlRDiu4sedhqPfafi5qL432NECLJ88WBg921/wu9SNcv8TOSjY+udAjwjHkRpvexX6eJ9yTuQ7l4ZHc34SjLdf4wcZ+Jm5shcI=
+    on:
+      tags: true
+  - provider: releases
+    api_key:
+        secure: kZpJKrxYXHPKoqwdSZNuxBSulknm82AIag7tVIKnIkrtVrcOfyo78+wZgU9MVFXU3cfzmH9dnK1RZFGC0bNwJkRz7qXC2lj2pYSLGI8m5fTY5vytyo3ecgV3pts6jkg2e9sOvGVyr6NlIpfwkLMr17Q62awdL3Oi7SXPifxmNbM=
+    file:
+      - "hedges.js"
+      - "hedges.min.js"
+    on:
+      tags: true

@@ -1,74 +1,102 @@
-# hedges [![Build Status](https://img.shields.io/travis/wooorm/hedges.svg?style=flat)](https://travis-ci.org/wooorm/hedges) [![Coverage Status](https://img.shields.io/coveralls/wooorm/hedges.svg?style=flat)](https://coveralls.io/r/wooorm/hedges?branch=master)
+# hedges [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
 List of _supposed_ English (both British and American) hedge words.
 
 ## Installation
 
-[npm](https://docs.npmjs.com/cli/install):
+[npm][npm-install]:
 
 ```bash
-$ npm install hedges
+npm install hedges
 ```
 
-[Component.js](https://github.com/componentjs/component):
-
-```bash
-$ component install wooorm/hedges
-```
-
-[Bower](http://bower.io/#install-packages):
-
-```bash
-$ bower install hedges
-```
-
-[Duo](http://duojs.org/#getting-started):
-
-```javascript
-var hedges = require('wooorm/hedges');
-```
-
-UMD: globals, AMD, and CommonJS ([uncompressed](hedges.js) and [compressed](hedges.min.js)):
-
-```html
-<script src="path/to/hedges.js"></script>
-<script>
-  console.log(hedges);
-</script>
-```
+**hedges** is also available for [duo][duo-install], and as an
+AMD, CommonJS, and globals module, [uncompressed and compressed][releases].
 
 ## Usage
 
-```javascript
-var hedges = require('hedges');
+```js
+var hedges = require("hedges");
 
-hedges.is('approximately'); // true
-hedges.is('hedges'); // false
+hedges.length; // 162
 
-hedges.add('unicorn');
-hedges.is('unicorn'); // true
+console.log(hedges.slice(0, 10));
+```
 
-hedges.remove('unicorn');
-hedges.is('unicorn'); // false
+Yields:
+
+```json
+[
+  "a bit",
+  "about",
+  "actually",
+  "allege",
+  "alleged",
+  "almost",
+  "almost never",
+  "always",
+  "and all that",
+  "and so forth"
+]
 ```
 
 ## API
 
-_Roughly_, **hedges** exposes information using [the datalist-interface API](https://github.com/wooorm/datalist-interface#api).
+### `hedges`
 
-## Supported words
+**Type**: `Array.<string>` — _Roughly_, **hedges** exposes information
+as an list of strings.
 
-For a complete list of supported hedge words and phrases, _like_, see [Support.md](Support.md).
+## Support
 
-Note that the words listed in **hedges** are _speculated_ to be hedges, although _perhaps_ not.
+For a complete list of supported hedge words and phrases, _like_, see
+[support.md][support].
+
+Note that the words listed in **hedges** are _speculated_ to be hedges,
+although _perhaps_ not.
 
 ## Related
 
-- [buzzwords](https://github.com/wooorm/buzzwords) — List of buzzwords;
-- [fillers](https://github.com/wooorm/fillers) — List of filler words;
-- [profanities](https://github.com/wooorm/profanities) — List of profane words;
-- [weasels](https://github.com/wooorm/weasels) — List of weasel words.
+*   [buzzwords](https://github.com/wooorm/buzzwords)
+    — List of buzzwords;
+
+*   [dale-chall](https://github.com/wooorm/dale-chall)
+    — List of familiar American-English words (1995);
+
+*   [fillers](https://github.com/wooorm/fillers)
+    — List of filler words;
+
+*   [profanities](https://github.com/wooorm/profanities)
+    — List of profane words;
+
+*   [spache](https://github.com/wooorm/spache)
+    — List of simple American-English words (1974);
+
+*   [weasels](https://github.com/wooorm/weasels)
+    — List of weasel words.
 
 ## License
 
-[MIT](LICENSE) © [Titus Wormer](http://wooorm.com)
+[MIT][license] © [Titus Wormer][author]
+
+<!-- Definitions -->
+
+[travis-badge]: https://img.shields.io/travis/wooorm/hedges.svg
+
+[travis]: https://travis-ci.org/wooorm/hedges
+
+[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/hedges.svg
+
+[codecov]: https://codecov.io/github/wooorm/hedges
+
+[npm-install]: https://docs.npmjs.com/cli/install
+
+[duo-install]: http://duojs.org/#getting-started
+
+[releases]: https://github.com/wooorm/hedges/releases
+
+[license]: LICENSE
+
+[support]: support.md
+
+[author]: http://wooorm.com
