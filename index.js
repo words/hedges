@@ -1,6 +1,6 @@
 /**
  * @author Titus Wormer
- * @copyright 2016 Titus Wormer
+ * @copyright 2014 Titus Wormer
  * @license MIT
  * @module hedges
  * @fileoverview List of (possible) English hedge words.
@@ -8,10 +8,5 @@
 
 'use strict';
 
-/* eslint-env commonjs */
-
-/*
- * Expose.
- */
-
-module.exports = require('./data/index.json');
+/* Expose. */
+module.exports = require('./index.json');

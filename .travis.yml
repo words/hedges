@@ -1,25 +1,26 @@
 language: node_js
 node_js:
-- '0.10'
 - '0.11'
 - '0.12'
 - '4.0'
 - '5.0'
-- iojs
+- '6.0'
+after_success: bash <(curl -s https://codecov.io/bash)
 sudo: false
-after_script: npm install codecov.io && cat ./coverage/lcov.info | codecov
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
     api_key:
-        secure: tji+1KawcfpAARquqpGLa7wa4cAiiRGoDJWeDCyrlZ84k9JVEyYni0505DWUdnlblBKM3qim1tlRDiu4sedhqPfafi5qL432NECLJ88WBg921/wu9SNcv8TOSjY+udAjwjHkRpvexX6eJ9yTuQ7l4ZHc34SjLdf4wcZ+Jm5shcI=
+      secure: tji+1KawcfpAARquqpGLa7wa4cAiiRGoDJWeDCyrlZ84k9JVEyYni0505DWUdnlblBKM3qim1tlRDiu4sedhqPfafi5qL432NECLJ88WBg921/wu9SNcv8TOSjY+udAjwjHkRpvexX6eJ9yTuQ7l4ZHc34SjLdf4wcZ+Jm5shcI=
     on:
       tags: true
+      node: '5.0'
   - provider: releases
     api_key:
-        secure: kZpJKrxYXHPKoqwdSZNuxBSulknm82AIag7tVIKnIkrtVrcOfyo78+wZgU9MVFXU3cfzmH9dnK1RZFGC0bNwJkRz7qXC2lj2pYSLGI8m5fTY5vytyo3ecgV3pts6jkg2e9sOvGVyr6NlIpfwkLMr17Q62awdL3Oi7SXPifxmNbM=
+      secure: kZpJKrxYXHPKoqwdSZNuxBSulknm82AIag7tVIKnIkrtVrcOfyo78+wZgU9MVFXU3cfzmH9dnK1RZFGC0bNwJkRz7qXC2lj2pYSLGI8m5fTY5vytyo3ecgV3pts6jkg2e9sOvGVyr6NlIpfwkLMr17Q62awdL3Oi7SXPifxmNbM=
     file:
       - "hedges.js"
       - "hedges.min.js"
     on:
       tags: true
+      node: '6.0'
