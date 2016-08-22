@@ -39,7 +39,7 @@ Yields:
 
 ### `hedges`
 
-_Roughly_, **hedges** exposes information as an list of strings
+_Roughly_, **hedges** exposes information as a list of strings
 (`Array.<string>`).
 
 ## Support
