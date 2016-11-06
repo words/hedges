@@ -8,15 +8,15 @@
     "word",
     "list"
   ],
-  "files": [
-    "index.js",
-    "index.json"
-  ],
   "repository": "https://github.com/wooorm/hedges",
   "bugs": "https://github.com/wooorm/hedges/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "main": "index.json",
+  "files": [
+    "index.json"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -32,7 +32,7 @@
   "scripts": {
     "build-md": "remark . --quiet --frail",
     "build-generate": "node build",
-    "build-bundle": "browserify index.js --bare -s hedges > hedges.js",
+    "build-bundle": "browserify index.json --bare -s hedges > hedges.js",
     "build-mangle": "esmangle hedges.js > hedges.min.js",
     "build": "npm run build-md && npm run build-generate && npm run build-bundle && npm run build-mangle",
     "lint": "xo",
