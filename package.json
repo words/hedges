@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build-md": "remark . --quiet --frail",
-    "build-generate": "node script/generate.js",
+    "build-generate": "node build",
     "build-bundle": "browserify index.js --bare -s hedges > hedges.js",
     "build-mangle": "esmangle hedges.js > hedges.min.js",
     "build": "npm run build-md && npm run build-generate && npm run build-bundle && npm run build-mangle",
