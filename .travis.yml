@@ -1,10 +1,8 @@
 language: node_js
 node_js:
 - '4.0'
-- '5.0'
-- '6.0'
-after_success: bash <(curl -s https://codecov.io/bash)
-sudo: false
+- '7.0'
+after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
@@ -12,7 +10,7 @@ deploy:
       secure: tji+1KawcfpAARquqpGLa7wa4cAiiRGoDJWeDCyrlZ84k9JVEyYni0505DWUdnlblBKM3qim1tlRDiu4sedhqPfafi5qL432NECLJ88WBg921/wu9SNcv8TOSjY+udAjwjHkRpvexX6eJ9yTuQ7l4ZHc34SjLdf4wcZ+Jm5shcI=
     on:
       tags: true
-      node: '5.0'
+      node: '4.0'
   - provider: releases
     api_key:
       secure: kZpJKrxYXHPKoqwdSZNuxBSulknm82AIag7tVIKnIkrtVrcOfyo78+wZgU9MVFXU3cfzmH9dnK1RZFGC0bNwJkRz7qXC2lj2pYSLGI8m5fTY5vytyo3ecgV3pts6jkg2e9sOvGVyr6NlIpfwkLMr17Q62awdL3Oi7SXPifxmNbM=
@@ -21,4 +19,4 @@ deploy:
       - "hedges.min.js"
     on:
       tags: true
-      node: '6.0'
+      node: '7.0'
