@@ -1,4 +1,4 @@
-# hedges [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# hedges [![Build Status][travis-badge]][travis]
 
 List of _supposed_ English (both British and American) hedge words.
 
@@ -74,10 +74,6 @@ although _perhaps_ not.
 [travis-badge]: https://img.shields.io/travis/wooorm/hedges.svg
 
 [travis]: https://travis-ci.org/wooorm/hedges
-
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/hedges.svg
-
-[codecov]: https://codecov.io/github/wooorm/hedges
 
 [npm]: https://docs.npmjs.com/cli/install
 
