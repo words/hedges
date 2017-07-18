@@ -4,7 +4,7 @@ List of _supposed_ English (both British and American) hedge words.
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install hedges
@@ -15,7 +15,7 @@ npm install hedges
 ```js
 var hedges = require('hedges');
 
-hedges.length; // 162
+hedges.length; //=> 162
 
 console.log(hedges.slice(0, 10));
 ```
@@ -52,18 +52,18 @@ although _perhaps_ not.
 
 ## Related
 
-*   [buzzwords](https://github.com/wooorm/buzzwords)
-    — List of buzzwords;
-*   [dale-chall](https://github.com/wooorm/dale-chall)
-    — List of familiar American-English words (1995);
-*   [fillers](https://github.com/wooorm/fillers)
-    — List of filler words;
-*   [profanities](https://github.com/wooorm/profanities)
-    — List of profane words;
-*   [spache](https://github.com/wooorm/spache)
-    — List of simple American-English words (1974);
-*   [weasels](https://github.com/wooorm/weasels)
-    — List of weasel words.
+*   [`buzzwords`](https://github.com/wooorm/buzzwords)
+    — List of buzzwords
+*   [`dale-chall`](https://github.com/wooorm/dale-chall)
+    — List of familiar American-English words (1995)
+*   [`fillers`](https://github.com/wooorm/fillers)
+    — List of filler words
+*   [`profanities`](https://github.com/wooorm/profanities)
+    — List of profane words
+*   [`spache`](https://github.com/wooorm/spache)
+    — List of simple American-English words (1974)
+*   [`weasels`](https://github.com/wooorm/weasels)
+    — List of weasel words
 
 ## License
 
@@ -79,7 +79,7 @@ although _perhaps_ not.
 
 [codecov]: https://codecov.io/github/wooorm/hedges
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
