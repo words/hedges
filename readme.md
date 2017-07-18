@@ -45,7 +45,7 @@ _Roughly_, **hedges** exposes information as a list of strings
 ## Support
 
 For a complete list of supported hedge words and phrases, _like_, see
-[index.json][data].
+[data.txt][data].
 
 Note that the words listed in **hedges** are _speculated_ to be hedges,
 although _perhaps_ not.
@@ -85,4 +85,4 @@ although _perhaps_ not.
 
 [author]: http://wooorm.com
 
-[data]: index.json
+[data]: data.txt

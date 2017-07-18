@@ -3,5 +3,6 @@
 .nyc_output/
 coverage/
 node_modules/
+index.json
 hedges.js
 hedges.min.js
