@@ -8,8 +8,8 @@
     "word",
     "list"
   ],
-  "repository": "https://github.com/wooorm/hedges",
-  "bugs": "https://github.com/wooorm/hedges/issues",
+  "repository": "words/hedges",
+  "bugs": "https://github.com/words/hedges/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
@@ -46,6 +46,8 @@
     ]
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }

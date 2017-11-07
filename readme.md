@@ -71,9 +71,9 @@ although _perhaps_ not.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/hedges.svg
+[travis-badge]: https://img.shields.io/travis/words/hedges.svg
 
-[travis]: https://travis-ci.org/wooorm/hedges
+[travis]: https://travis-ci.org/words/hedges
 
 [npm]: https://docs.npmjs.com/cli/install
 
