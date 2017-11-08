@@ -4,6 +4,7 @@ node_js:
 - '9.0'
 deploy:
   - provider: npm
+    skip_cleanup: true
     email: tituswormer@gmail.com
     api_key:
       secure: tji+1KawcfpAARquqpGLa7wa4cAiiRGoDJWeDCyrlZ84k9JVEyYni0505DWUdnlblBKM3qim1tlRDiu4sedhqPfafi5qL432NECLJ88WBg921/wu9SNcv8TOSjY+udAjwjHkRpvexX6eJ9yTuQ7l4ZHc34SjLdf4wcZ+Jm5shcI=
