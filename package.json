@@ -23,23 +23,31 @@
     "browserify": "^16.0.0",
     "esmangle": "^1.0.1",
     "plain-text-data-to-json": "^1.0.0",
+    "prettier": "^1.17.1",
     "remark-cli": "^6.0.0",
     "remark-preset-wooorm": "^5.0.0",
     "tape": "^4.0.0",
     "xo": "^0.24.0"
   },
   "scripts": {
-    "build-md": "remark . -qfo",
-    "build-generate": "node build",
+    "generate": "node build",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-bundle": "browserify index.json --bare -s hedges > hedges.js",
     "build-mangle": "esmangle hedges.js > hedges.min.js",
-    "build": "npm run build-generate && npm run build-md && npm run build-bundle && npm run build-mangle",
-    "lint": "xo",
+    "build": "npm run build-bundle && npm run build-mangle",
     "test-api": "node test",
-    "test": "npm run build && npm run lint && npm run test-api"
+    "test": "npm run generate && npm run format && npm run build && npm run test-api"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
   },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "ignores": [
       "hedges.js"

@@ -13,11 +13,11 @@ npm install hedges
 ## Usage
 
 ```js
-var hedges = require('hedges');
+var hedges = require('hedges')
 
-hedges.length; //=> 162
+console.log(hedges.length) //=> 162
 
-console.log(hedges.slice(0, 10));
+console.log(hedges.slice(0, 10))
 ```
 
 Yields:
