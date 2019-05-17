@@ -1,4 +1,8 @@
-# hedges [![Build Status][travis-badge]][travis]
+# hedges
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 List of *supposed* English (both British and American) hedge words.
 
@@ -71,9 +75,17 @@ although *perhaps* not.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/words/hedges.svg
+[build-badge]: https://img.shields.io/travis/words/hedges.svg
 
-[travis]: https://travis-ci.org/words/hedges
+[build]: https://travis-ci.org/words/hedges
+
+[downloads-badge]: https://img.shields.io/npm/dm/hedges.svg
+
+[downloads]: https://www.npmjs.com/package/hedges
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/hedges.svg
+
+[size]: https://bundlephobia.com/result?p=hedges
 
 [npm]: https://docs.npmjs.com/cli/install
 
