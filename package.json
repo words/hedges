@@ -21,19 +21,19 @@
   "dependencies": {},
   "devDependencies": {
     "browserify": "^16.0.0",
-    "esmangle": "^1.0.1",
     "plain-text-data-to-json": "^1.0.0",
     "prettier": "^1.17.1",
     "remark-cli": "^6.0.0",
     "remark-preset-wooorm": "^5.0.0",
     "tape": "^4.0.0",
+    "tinyify": "^2.5.0",
     "xo": "^0.24.0"
   },
   "scripts": {
     "generate": "node build",
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
-    "build-bundle": "browserify index.json --bare -s hedges > hedges.js",
-    "build-mangle": "esmangle hedges.js > hedges.min.js",
+    "build-bundle": "browserify index.json -s hedges -o hedges.js",
+    "build-mangle": "browserify index.json -s hedges -p tinyify -o hedges.js",
     "build": "npm run build-bundle && npm run build-mangle",
     "test-api": "node test",
     "test": "npm run generate && npm run format && npm run build && npm run test-api"
