@@ -7,11 +7,9 @@
 
 % Sources:
 % - https://github.com/ohEmily/HedgeCounter/
-% - http://english-language-skills.com/item/
-%     177-writing-skills-hedge-words.html
+% - http://english-language-skills.com/item/177-writing-skills-hedge-words.html (down)
 % - http://www.uefap.com/writing/feature/hedge.htm
-% - http://www.davidhanauer.com/CV/conference_papers/2012/
-%     hedging_AMIA_2012_presentation.pdf
+% - https://www.davidhanauer.com/CV/conference_papers/2012/hedging_AMIA_2012_presentation.pdf
 % - https://www.readwriteandedit.com/hedgewords.html
 % - http://deceptionanalysis.com/hedge_words.html
 

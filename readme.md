@@ -79,6 +79,6 @@ although _perhaps_ not.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [data]: data.txt
