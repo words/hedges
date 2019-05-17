@@ -1,23 +1,15 @@
 language: node_js
+sudo: false
 node_js:
-- '4.0'
-- '9.0'
+  - lts/dubnium
+  - node
 deploy:
-  - provider: npm
-    skip_cleanup: true
-    email: tituswormer@gmail.com
-    api_key:
-      secure: tji+1KawcfpAARquqpGLa7wa4cAiiRGoDJWeDCyrlZ84k9JVEyYni0505DWUdnlblBKM3qim1tlRDiu4sedhqPfafi5qL432NECLJ88WBg921/wu9SNcv8TOSjY+udAjwjHkRpvexX6eJ9yTuQ7l4ZHc34SjLdf4wcZ+Jm5shcI=
-    on:
-      tags: true
-      node: '9.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: kZpJKrxYXHPKoqwdSZNuxBSulknm82AIag7tVIKnIkrtVrcOfyo78+wZgU9MVFXU3cfzmH9dnK1RZFGC0bNwJkRz7qXC2lj2pYSLGI8m5fTY5vytyo3ecgV3pts6jkg2e9sOvGVyr6NlIpfwkLMr17Q62awdL3Oi7SXPifxmNbM=
-    file:
-      - "hedges.js"
-      - "hedges.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: PpbegzG9ZUpXDYDGFF+hZ91d3m0Y/63WW+sEBLE8Gyt+Zb73WmF4DbDdhr+cSg5V/YchwSFk1SEGNfAM6QkqPkJQ0d1G19pueepHTZecL7BTPgml/0NqIpDobs5mg0WYa5GKX+Ct3QBpT0QcAawy0kBJzG9dhMmtQ2dXrnVg48Q=
+  file:
+    - 'hedges.js'
+    - 'hedges.min.js'
+  on:
+    tags: true
