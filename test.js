@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var hedges = require('./');
+var hedges = require('.');
 
 test('hedges', function (t) {
   t.equal(typeof hedges, 'object', 'should be an array #1');

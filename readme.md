@@ -1,6 +1,6 @@
 # hedges [![Build Status][travis-badge]][travis]
 
-List of _supposed_ English (both British and American) hedge words.
+List of *supposed* English (both British and American) hedge words.
 
 ## Installation
 
@@ -39,16 +39,16 @@ Yields:
 
 ### `hedges`
 
-_Roughly_, **hedges** exposes information as a list of strings
+*Roughly*, **hedges** exposes information as a list of strings
 (`Array.<string>`).
 
 ## Support
 
-For a complete list of supported hedge words and phrases, _like_, see
+For a complete list of supported hedge words and phrases, *like*, see
 [data.txt][data].
 
-Note that the words listed in **hedges** are _speculated_ to be hedges,
-although _perhaps_ not.
+Note that the words listed in **hedges** are *speculated* to be hedges,
+although *perhaps* not.
 
 ## Related
 
