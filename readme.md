@@ -6,15 +6,15 @@
 
 List of *supposed* English (both British and American) hedge words.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install hedges
 ```
 
-## Usage
+## Use
 
 ```js
 var hedges = require('hedges')
@@ -49,10 +49,10 @@ Yields:
 ## Support
 
 For a complete list of supported hedge words and phrases, *like*, see
-[data.txt][data].
+[`data.txt`][data].
 
-Note that the words listed in **hedges** are *speculated* to be hedges,
-although *perhaps* not.
+Note that the words listed in **hedges** are *speculated* to be hedges, although
+*perhaps* not.
 
 ## Related
 
