@@ -1,10 +1,9 @@
-'use strict'
-
-var fs = require('fs')
-var toJSON = require('plain-text-data-to-json')
+import fs from 'fs'
+import {toJson} from 'plain-text-data-to-json'
 
 var doc = fs.readFileSync('data.txt', 'utf8')
 
-var data = JSON.stringify(toJSON(doc), null, 2) + '\n'
-
-fs.writeFileSync('index.json', data)
+fs.writeFileSync(
+  'index.js',
+  'export var hedges = ' + JSON.stringify(toJson(doc), null, 2) + '\n'
+)

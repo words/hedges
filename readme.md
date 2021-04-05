@@ -9,6 +9,9 @@ List of *supposed* English (both British and American) hedge words.
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,7 +21,7 @@ npm install hedges
 ## Use
 
 ```js
-var hedges = require('hedges')
+import {hedges} from 'hedges'
 
 console.log(hedges.length) //=> 162
 
@@ -41,6 +44,9 @@ Yields:
 ```
 
 ## API
+
+This package exports the following identifiers: `hedges`.
+There is no default export.
 
 ### `hedges`
 
