@@ -1,6 +1,7 @@
 # hedges
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
@@ -75,9 +76,13 @@ Note that the words listed in **hedges** are *speculated* to be hedges, although
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/hedges.svg
+[build-badge]: https://github.com/words/hedges/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/hedges
+[build]: https://github.com/words/hedges/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/words/hedges.svg
+
+[coverage]: https://codecov.io/github/words/hedges
 
 [downloads-badge]: https://img.shields.io/npm/dm/hedges.svg
 
