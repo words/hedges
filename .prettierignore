@@ -1,2 +1,4 @@
+coverage/
 hedges.js
 hedges.min.js
+*.md
