@@ -1,3 +1,6 @@
+/**
+ * List of *supposed* English (both British and American) hedge words.
+ */
 export const hedges = [
   'a bit',
   'about',
