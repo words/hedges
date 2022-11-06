@@ -1,10 +1,9 @@
-import test from 'tape'
+import assert from 'node:assert'
+import test from 'node:test'
 import {hedges} from './index.js'
 
-test('hedges', function (t) {
-  t.equal(typeof hedges, 'object', 'should be an array #1')
-  t.equal(Array.isArray(hedges), true, 'should be an array #2')
-  t.notEqual(hedges.indexOf('appear'), -1, 'should contain words')
-
-  t.end()
+test('hedges', function () {
+  assert.equal(typeof hedges, 'object', 'should be an array #1')
+  assert.equal(Array.isArray(hedges), true, 'should be an array #2')
+  assert.notEqual(hedges.indexOf('appear'), -1, 'should contain words')
 })
