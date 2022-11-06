@@ -51,7 +51,7 @@ There is no default export.
 ### `hedges`
 
 *Roughly*, **hedges** exposes information as a list of strings
-(`Array.<string>`).
+(`Array<string>`).
 
 ## Support
 
