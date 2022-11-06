@@ -1,4 +1,4 @@
-export var hedges = [
+export const hedges = [
   'a bit',
   'about',
   'actually',
