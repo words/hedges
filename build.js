@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 import {toJson} from 'plain-text-data-to-json'
 
 var doc = fs.readFileSync('data.txt', 'utf8')
